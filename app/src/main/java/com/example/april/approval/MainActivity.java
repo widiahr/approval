@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-
+import com.example.april.approval.dispatcher.pickUpDis;
 
 
 public class MainActivity extends AppCompatActivity
@@ -110,7 +110,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_about) {
 
         } else if (id == R.id.nav_logout) {
-
+            Intent home = new Intent(MainActivity.this, pickUpDis.class);
+            startActivity(home);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

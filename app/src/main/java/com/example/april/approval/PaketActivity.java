@@ -37,8 +37,8 @@ public class PaketActivity extends AppCompatActivity {
 
     @BindView(R.id.rvPaket)
     RecyclerView rvPaket;
-    @BindView(R.id.btnProvepick)
-    Button btnProvePick;
+//    @BindView(R.id.btnProvepick)
+//    Button btnProvePick;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -72,12 +72,12 @@ public class PaketActivity extends AppCompatActivity {
 
         getDataPaket();
 
-        btnProvePick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(PaketActivity.this, MainActivity.class));
-            }
-        });
+//        btnProvePick.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(PaketActivity.this, MainActivity.class));
+//            }
+//        });
     }
 
     private void getDataPaket(){

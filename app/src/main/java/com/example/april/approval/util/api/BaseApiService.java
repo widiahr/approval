@@ -54,9 +54,11 @@ public interface BaseApiService {
                                           @Field("height") String height,
                                           @Field("kendaraan") String kendaraan,
                                           @Field("ket") String ket,
+                                          @Field("status") String status,
                                           @Field("date") String date,
-                                          @Field("kurir") String kurir);
+                                          @Field("kurir") String kurir
+                                         );
 
-    @GET("semuapaket")
+    @GET("semua-paket")
     Call<ResponsePaket> getSemuapaket();
 }

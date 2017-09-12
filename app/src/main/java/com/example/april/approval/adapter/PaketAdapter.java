@@ -47,7 +47,7 @@ public class PaketAdapter extends RecyclerView.Adapter<PaketAdapter.PaketHolder>
 
     @Override
     public PaketAdapter.PaketHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_paket, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_paket, parent, false);
         return new PaketHolder(itemView);
     }
 
@@ -57,13 +57,13 @@ public class PaketAdapter extends RecyclerView.Adapter<PaketAdapter.PaketHolder>
         holder.txttanggalDet.setText(semuapaketItem.getDate());
         holder.txtidPickUpDet.setText(semuapaketItem.getKodePengiriman());
         holder.txtNamaPenerimaDet.setText(semuapaketItem.getPenerima());
-        holder.txtKontakPenerimaDet.setText(semuapaketItem.getTelpPenerima());
-        holder.txtAlamat1Det.setText(semuapaketItem.getAlamatPenerima());
-        holder.txtJenisBarangDet.setText(semuapaketItem.getJenisBarang());
-        holder.txtQtyDet.setText(semuapaketItem.getQty());
-        holder.txtWidthDet.setText(semuapaketItem.getWidth());
-        holder.txtLengthDet.setText(semuapaketItem.getLength());
-        holder.txtHeightDet.setText(semuapaketItem.getHeight());
+//        holder.txtKontakPenerimaDet.setText(semuapaketItem.getTelpPenerima());
+//        holder.txtAlamat1Det.setText(semuapaketItem.getAlamatPenerima());
+//        holder.txtJenisBarangDet.setText(semuapaketItem.getJenisBarang());
+//        holder.txtQtyDet.setText(semuapaketItem.getQty());
+//        holder.txtWidthDet.setText(semuapaketItem.getWidth());
+//        holder.txtLengthDet.setText(semuapaketItem.getLength());
+//        holder.txtHeightDet.setText(semuapaketItem.getHeight());
 
 //        String date = semuapaketItem.getDate();
 //        String firstCharDate = date.substring(0, 1);
@@ -85,22 +85,22 @@ public class PaketAdapter extends RecyclerView.Adapter<PaketAdapter.PaketHolder>
         TextView txtidPickUpDet;
         @BindView(R.id.txtNamaPenerimaDet)
         TextView txtNamaPenerimaDet;
-        @BindView(R.id.txtKontakPenerimaDet)
-        TextView txtKontakPenerimaDet;
-        @BindView(R.id.txtAlamat1Det)
-        TextView txtAlamat1Det;
-        @BindView(R.id.txtJenisBarangDet)
-        TextView txtJenisBarangDet;
-        @BindView(R.id.txtQtyDet)
-        TextView txtQtyDet;
-        @BindView(R.id.txtWidthDet)
-        TextView txtWidthDet;
-        @BindView(R.id.txtLengthDet)
-        TextView txtLengthDet;
-        @BindView(R.id.txtHeightDet)
-        TextView txtHeightDet;
-        @BindView(R.id.txtKetDet)
-        TextView txtKetDet;
+//        @BindView(R.id.txtKontakPenerimaDet)
+//        TextView txtKontakPenerimaDet;
+//        @BindView(R.id.txtAlamat1Det)
+//        TextView txtAlamat1Det;
+//        @BindView(R.id.txtJenisBarangDet)
+//        TextView txtJenisBarangDet;
+//        @BindView(R.id.txtQtyDet)
+//        TextView txtQtyDet;
+//        @BindView(R.id.txtWidthDet)
+//        TextView txtWidthDet;
+//        @BindView(R.id.txtLengthDet)
+//        TextView txtLengthDet;
+//        @BindView(R.id.txtHeightDet)
+//        TextView txtHeightDet;
+//        @BindView(R.id.txtKetDet)
+//        TextView txtKetDet;
 
         public PaketHolder(View itemView) {
             super(itemView);
